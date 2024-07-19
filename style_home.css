@@ -1,10 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: Arial, sans-serif;
 }
 .navbar {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -80,9 +81,9 @@
     /* height: 200vh; */
 }
 .hero_section{
-    width: 100%;
+    width: 98%;
     padding: 30px;
-    height: 100vh;
+    height: 80vh;
     margin: auto;
     background-image: url("https://img.freepik.com/free-photo/blue-office-stationery-set-with-laptop_23-2147843325.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721260800&semt=ais_user");
     background-repeat: no-repeat;
@@ -96,7 +97,7 @@
 }
 .additional_form{
     width: 100%;
-    margin: auto;
+    margin:15px auto;
     display: flex;
     justify-content: space-between;
 }
@@ -157,18 +158,18 @@ label {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     padding: 5px;
-    gap: 15px;
-
+    gap: 17px;
+    margin-top: 25px;
 }
 .apicall div{
     border-radius: 25px 50px;
     text-align: center;
     padding: 10px;
-    transition: all .8s ease-in-out;
-    border: .1px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all .5s ease-in-out;
 }
 .apicall div:hover{
-    transform: scale(1.02);
+    transform: scale(1.01);
     border: 1px solid gray;
     cursor: pointer;
 }
@@ -263,6 +264,7 @@ label {
         overflow: hidden;
         position: sticky;
         top: 0px;
+        width: 90%;
     }
     .container{
        width: 98%;
@@ -286,13 +288,15 @@ label {
     }
 
     .menu_icon {
-        display: flex;
+        display: block;
+        
     }
 
     .nav_links.active {
         display: flex;
     }
     .hero_section{
+        width: 90%;
         height: 40%;
     }
     .hero_section img{

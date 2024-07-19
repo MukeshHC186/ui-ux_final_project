@@ -43,10 +43,15 @@
                 email:document.getElementById("email").value,
                 password:document.getElementById("password").value
              }
+             if(obj.email==""||obj.password==""||obj.name==""||obj.mobile==""){
+        alert("please fill all the fields");
+        return
+     }
              arr.push(obj)
              localStorage.setItem("users",JSON.stringify(arr))
              alert("Data Saved Sacussfully")
              form.reset()
+             window.location.href="index.html"
             }
             let btn2=document.getElementById("btn2")
             btn2.addEventListener("click",userDetails)
