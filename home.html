@@ -6,7 +6,10 @@
     <title>Welcome to home page</title>
     <link rel="stylesheet" href="./style_home.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container1">
@@ -61,6 +64,53 @@
               </div>
       </div>
       <div class="apicall" id="apicall"></div>
+      <div class="footer">
+        <footer id="main_footer">
+          <div class="about">
+            <h3>About Us</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+              Disigned by Mukesh Kumar Jat <br />Mobile No.8441925100 <br />Email
+              :- mjatsuper@gmail.com
+            </p>
+          </div>
+          <div class="links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#" id="home">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="follow_us">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com" target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
     </div>
   </body>
   <script>
@@ -86,13 +136,23 @@
       arr.map((ele) => {
         let div = document.createElement("div");
         div.class = "display_card";
-        div.style.border="1px solid red"
         let img = document.createElement("img");
         img.src = ele.image;
         let h3 = document.createElement("h3");
         h3.innerText = ele.price;
+        let h4 = document.createElement("h4");
+        h4.innerText = ele.title;
+        let p=document.createElement("p")
+        p.innerText=ele.description
+        let buy=document.createElement("button")
+        buy.id="buy"
+        buy.innerText="Buy Now"
+        let add=document.createElement("button")
+        add.id="add"
+        add.innerText="Add to Cart"
 
-        div.append(img, h3);
+
+        div.append(img, h3,h4,p,add,buy);
         display.append(div);
       });
 
