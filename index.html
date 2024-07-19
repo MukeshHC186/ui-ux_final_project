@@ -26,4 +26,32 @@
         </div>
     
 </body>
+<script>
+    let arrForLogin=JSON.parse(localStorage.getItem("users"))||[]
+    let form=document.getElementById("form")
+    function loginMatch(e){
+     e.preventDefault()
+     let newobj={
+        email:document.getElementById("email").value,
+        password:document.getElementById("password").value
+     }
+     if(newobj.email==""||newobj.password==""){
+        alert("please fill all the fields")
+        return
+     }
+     let ValueCheck=arrForLogin.find((ele)=>
+        newobj.email===ele.email&&newobj.password===ele.password
+     )
+     if(ValueCheck){
+        localStorage.setItem("loggedInuser",JSON.stringify(ValueCheck))
+        alert("Login Sucessfully")
+        window.location.href="home.html"
+     }else{
+        alert("Login Failed User Email or Password Not Found")
+     }
+     form.reset()
+    }
+    let btn1=document.getElementById("btn1")
+    btn1.addEventListener("click",loginMatch)
+</script>
 </html>

@@ -82,11 +82,12 @@
 .hero_section{
     width: 100%;
     padding: 30px;
+    height: 30%;
     margin: auto;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEPyrSSvXclL5qDxuo2HH67xpWq2aMe9-k7w&s");
+    background-image: url("https://img.freepik.com/free-photo/blue-office-stationery-set-with-laptop_23-2147843325.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721260800&semt=ais_user");
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    color: black;
     text-align: center;
     line-height: inherit;
 }
