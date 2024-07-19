@@ -69,3 +69,35 @@ input[type="text"], input[type="tel"], input[type="email"], input[type="password
 .btn1:hover {
     opacity: 0.8;
 }
+@media screen and (min-width:200px) and (max-width:767px) {
+     .container{
+        width: 98%;
+     }
+    .form {
+        width: 95%;
+        padding: 5px;
+    } 
+    .form_group {
+        width: 100%;
+        margin-bottom: 10px;
+    } 
+    h4{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1080px) {
+.container{
+    width: 98%;
+}
+    .form {
+        width: 95%;
+        padding: 5px;
+    } 
+    .form_group {
+        width: 95%;
+        margin-bottom: 10px;
+    } 
+    h4{
+        font-size: 15px;
+    }
+}
