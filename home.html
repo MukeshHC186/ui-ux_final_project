@@ -34,20 +34,23 @@
         <a href="./index.html"><button id="logout">Logout</button></a>
       </nav>
       <div class="hero_section">
-        <h1>Welcome To our Website</h1><br><br>
-        <h2>Our Mission</h2><br>
-        <p>Our mission is to provide a platform for the people to share their ideas and thoughts</p>
-        <p>Created By Mukesh Kumar Jat 
-          <br>Mobile No. 8441925100
-          <br>Email:- mjatsuper@gmail.com
+        <h1>Welcome To our Website</h1>
+        <br /><br />
+        <h2>Our Mission</h2>
+        <br />
+        <p>
+          Our mission is to provide a platform for the people to share their
+          ideas and thoughts
+        </p>
+        <p>
+          Created By Mukesh Kumar Jat <br />Mobile No. 8441925100 <br />Email:-
+          mjatsuper@gmail.com
         </p>
       </div>
       <div class="apicall" id="apicall"></div>
       <div class="additional_form" id="additional_form">
-        <div class="img_div">
-            <img src="https://media.istockphoto.com/id/1463050489/photo/online-application-form-for-modish-registration.jpg?s=612x612&w=0&k=20&c=DKPBOubU6fsaY8Zmrp263zWm79zIjOf4URSUfcwupGQ=" alt="">
-        </div>
-        <form class="form_div">
+        <div class="main_form">
+          <form class="form_div">
             <label for="">Name<span>*</span>:-</label><br /><input
               type="text"
               placeholder="Enter Your Name"
@@ -61,8 +64,17 @@
               placeholder="Enter Your Email"
             />
             <div class="btn_div">
-                <button id="btn_contect">Contect Us</button>
-              </div>
+              <button id="btn_contect">Contect Us</button>
+            </div>
+          </form>
+        </div>
+        <div class="img_div">
+          <img
+            src="https://media.istockphoto.com/id/1463050489/photo/online-application-form-for-modish-registration.jpg?s=612x612&w=0&k=20&c=DKPBOubU6fsaY8Zmrp263zWm79zIjOf4URSUfcwupGQ="
+            alt=""
+          />
+        </div>
+       
       </div>
       <div class="footer">
         <footer id="main_footer">
@@ -70,8 +82,8 @@
             <h3>About Us</h3>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
-              Disigned by Mukesh Kumar Jat <br />Mobile No.8441925100 <br />Email
-              :- mjatsuper@gmail.com
+              Disigned by Mukesh Kumar Jat <br />Mobile No.8441925100
+              <br />Email :- mjatsuper@gmail.com
             </p>
           </div>
           <div class="links">
@@ -142,19 +154,17 @@
         h3.innerText = ele.price;
         let h4 = document.createElement("h4");
         h4.innerText = ele.title;
-        let p=document.createElement("p")
-        p.innerText=ele.description
-      
-        
-        let buy=document.createElement("button")
-        buy.id="buy"
-        buy.innerText="Buy Now"
-        let add=document.createElement("button")
-        add.id="add"
-        add.innerText="Add to Cart"
+        let p = document.createElement("p");
+        p.innerText = ele.description;
 
+        let buy = document.createElement("button");
+        buy.id = "buy";
+        buy.innerText = "Buy Now";
+        let add = document.createElement("button");
+        add.id = "add";
+        add.innerText = "Add to Cart";
 
-        div.append(img, h3,h4,p,add,buy);
+        div.append(img, h3, h4, p, add, buy);
         display.append(div);
       });
 
